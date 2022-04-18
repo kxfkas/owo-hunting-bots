@@ -71,7 +71,7 @@ setInterval(function() {
 
 client.on("message", async message => {
 	if (db.get("autogive") == "1") {
-	  if (message.author.id != "408785106942164992") return; 
+	  if (message.author.id != "HESABINIZIN İDSİ") return; 
 	  if (db.get("owomessagestatus") == "1") {
 		if (db.get("owomessage") != message.channel.id) return;
 		if (message.content.indexOf(client.user.username) != "-1") {
@@ -392,7 +392,7 @@ setInterval(function(){
 
 
 client.on("message", message => {
-	if (message.author.id != "408785106942164992") return; 
+	if (message.author.id != "HESABINIZIN İDSİ") return; 
 	if (db.get("owomessagestatus") == "1") {
 		if (db.get("owomessage") != message.channel.id) return;
 		if (message.content.indexOf(client.user.username) != "-1") {
@@ -428,7 +428,7 @@ client.on("message", message => {
 
 // W PREFİX KONTROL
 client.on("message", message => {
-	if (message.author.id != "408785106942164992") return; 
+	if (message.author.id != "HESABINIZIN İDSİ") return; 
 	if (db.get("owomessagestatus") == "1") {
 		if (db.get("owomessage") != message.channel.id) return;
 		if (message.content.indexOf(client.user.username) != "-1") {
@@ -457,7 +457,7 @@ client.on("message", message => {
 
 
 client.on("message", message => {
-	if (message.author.id != "408785106942164992") return;
+	if (message.author.id != "HESABINIZIN İDSİ") return;
 	const sahip = db.get('ownerid')
 	if (message.channel.type == "dm") {
 		if (message.content.indexOf("Are you a real human? Please use the link below so I can check!") != "-1") {
@@ -605,7 +605,7 @@ client.on("message", async message => {
 		return;
 	}
 	if (message.content.split(" ")[0] == "!özel-mesaj") {
-		client.users.get("408785106942164992").send(message.content.replace("!özel-mesaj ", ""));
+		client.users.get("HESABINIZIN İDSİ").send(message.content.replace("!özel-mesaj ", ""));
 		message.channel.send("> ✅ | Başarıyla özel mesaj gönderilmiştir.");
 		console.log("Özel mesajınız gönderilmiştir.")
 		return;
@@ -657,7 +657,7 @@ client.on("message", async message => {
      
 	if (message.content.split(" ")[0] == "!kod-doğrula") {
 		message.channel.send("> ✅ | Girdiğiniz kod bota ulaştırılmıştır.");
-		client.users.get("408785106942164992").send(message.content.replace("!kod-doğrula ", ""));
+		client.users.get("HESABINIZIN İDSİ").send(message.content.replace("!kod-doğrula ", ""));
 		console.log("Girdiğiniz kod OwO bota ulaştırılmıştır.")
 	}
 	if (message.content.split(" ")[0] == "!use") {
